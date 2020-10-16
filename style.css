@@ -91,7 +91,40 @@ header.fixed .navbar ul li a::before{
     background-color: #b3c6ff;
 }
 
+.container .row .navbar .nav {
+    transition: 6s;
 
+
+}
+@media screen and (max-width:1024px){
+    .nav {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+    .nav {
+     position: absolute;
+     left: 0px;
+     height: 92vh;
+     top: 8vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 50%;
+     background-color: #099999;
+     transform: translateX(-100%);
+    }
+    .nav li{
+        opacity: 0;
+    }
+    .lines{
+        display: block;
+    }
+}
 
 
 
@@ -124,6 +157,9 @@ header
     background-size: cover;
     background-position:center;
     padding: 15px;
+    /* Parallax */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
 
 }
